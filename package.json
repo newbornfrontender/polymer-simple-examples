@@ -1,0 +1,8 @@
+{
+  "name": "polymer-simple-examples",
+  "version": "1.0.0",
+  "description": "Простые примеры на Polymer",
+  "repository": "https://github.com/newbornfrontender/polymer-simple-examples.git",
+  "author": "Infant Frontender <newbornfrontender@gmail.com>",
+  "license": "MIT"
+}
