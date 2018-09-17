@@ -4,5 +4,11 @@
   "description": "Простые примеры на Polymer",
   "repository": "https://github.com/newbornfrontender/polymer-simple-examples.git",
   "author": "Infant Frontender <newbornfrontender@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@polymer/lit-element": "^0.6.0"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.1.2"
+  }
 }
