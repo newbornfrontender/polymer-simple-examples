@@ -25,6 +25,9 @@ class MyApp extends LitElement {
 
       <slot name="top-elem"></slot>
       <h1>Component: <span>${this.msg}</span></h1>
+      <slot name="fallback">
+        <p>Fallback</p>
+      </slot>
       <slot></slot>
     `;
   };
