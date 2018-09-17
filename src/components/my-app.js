@@ -23,7 +23,9 @@ class MyApp extends LitElement {
         }
       </style>
 
+      <slot name="top-elem"></slot>
       <h1>Component: <span>${this.msg}</span></h1>
+      <slot></slot>
     `;
   };
 };
