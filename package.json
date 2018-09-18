@@ -6,6 +6,7 @@
   "author": "Infant Frontender <newbornfrontender@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@polymer/app-route": "^3.0.2",
     "@polymer/lit-element": "^0.6.0"
   },
   "devDependencies": {

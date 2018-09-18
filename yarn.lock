@@ -2,12 +2,39 @@
 # yarn lockfile v1
 
 
+"@polymer/app-route@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@polymer/app-route/-/app-route-3.0.2.tgz#749096fb610fb15d27c7b68446406f30786cf93d"
+  integrity sha512-8Y34evmsaYh7ONr+zLwLzXaU0iOZZQj1E2uB3iaToQHbOP1POhKlnmAycBQ/eFB8BwrdSUBaDQk+rZhio78FQw==
+  dependencies:
+    "@polymer/iron-location" "^3.0.0-pre.26"
+    "@polymer/polymer" "^3.0.0"
+
+"@polymer/iron-location@^3.0.0-pre.26":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@polymer/iron-location/-/iron-location-3.0.1.tgz#43a59fced248ea71db5833116fcdefa186b79527"
+  integrity sha512-almb+p/fdSi4bxG+vyXjY51fDZxHMxwiug51Lfvr86wZRXN/u21Y6BapxG5n9f0hPSy9fimjIAvaYmozi7VjyQ==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+
 "@polymer/lit-element@^0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@polymer/lit-element/-/lit-element-0.6.0.tgz#6ad8ae0f0c749624ad5c5523384d5cd64db30d18"
   integrity sha512-9Agca2zlw61WCkKjp0jsz90FwQ1SGwWRJePQQtydlBkjxZ6P1O2uY6x6eLhIPScZ8vgklKRhvrx2xNX3QgMl4g==
   dependencies:
     lit-html "^0.11.2"
+
+"@polymer/polymer@^3.0.0":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@polymer/polymer/-/polymer-3.0.5.tgz#eaa42e70df7de818b5e1839452c82a5f83e39929"
+  integrity sha512-Zbmhtr5vZ3NoHWwFYLKI4ff7yfE6DZopI8vaS7HvmUIuNqsv/EpEDXfNEYjqePQmkMX5LU9OIKV1eX/+9aveow==
+  dependencies:
+    "@webcomponents/shadycss" "^1.2.0"
+
+"@webcomponents/shadycss@^1.2.0":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@webcomponents/shadycss/-/shadycss-1.5.2.tgz#ad72f43000c39ba4ac61e625131f34f4b7cfe55f"
+  integrity sha512-0OyrmVc7S+INtzoqP2ofAo+OdVn2Nj0Qvq4wD9FEGN7nMmLRxaD2mzy6hD6EslzxUSuGH302CDU4KXiY66SEqg==
 
 "@webcomponents/webcomponentsjs@^2.1.2":
   version "2.1.2"
