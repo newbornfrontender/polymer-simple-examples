@@ -8,6 +8,7 @@
   "dependencies": {
     "@polymer/app-route": "^3.0.2",
     "@polymer/iron-pages": "^3.0.1",
+    "@polymer/iron-selector": "^3.0.1",
     "@polymer/lit-element": "^0.6.0"
   },
   "devDependencies": {
