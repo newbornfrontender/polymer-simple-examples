@@ -3,10 +3,119 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"
+    >
+    <meta
+      http-equiv="x-ua-compatible"
+      content="ie=edge"
+    >
+
     <title>Главная</title>
+    <meta
+      name="description"
+      content="Тестовое описание"
+    >
+
+    <base href="/">
+
+    <link
+      rel="icon"
+      href="./static/favicon.ico"
+    >
+
+    <link
+      rel="manifest"
+      href="./manifest.json"
+    >
+
+    <meta
+    name="theme-color"
+    content="#000"
+    >
+
+    <!-- Добавить на главный экран для Chrome на Android -->
+    <!-- Fallback для manifest.json -->
+    <meta
+      name="mobile-web-app-capable"
+      content="yes"
+    >
+    <meta
+      name="application-name"
+      content="Тестовое приложение"
+    >
+
+    <!-- Добавить на главный экран для Safari на iOS -->
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes"
+    >
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    >
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Тестовое приложение"
+    >
+
+    <!-- Иконки для главного экрана -->
+    <link
+      rel="apple-touch-icon"
+      href="./static/manifest/icon-48x48.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./static/manifest/icon-72x72.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="96x96"
+      href="./static/manifest/icon-96x96.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./static/manifest/icon-144x144.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="./static/manifest/icon-192x192.png"
+    >
+
+    <!-- Иконки для Windows -->
+    <meta
+      name="msapplication-tileimage"
+      content="./static/manifest/icon-144x144.png"
+    >
+    <meta
+      name="msapplication-tilecolor"
+      content="#000"
+    >
+    <meta
+      name="msapplication-tap-highlight"
+      content="no"
+    >
+
+    <script>
+      window.MyAppGlobals = {
+        rootPath: '/',
+      };
+
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('./service-worker.js', {
+            scope: MyAppGlobals.rootPath,
+          });
+        });
+      };
+    </script>
+
     <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
     <script
       type="module"
       src="./src/components/my-app.js"
@@ -15,5 +124,9 @@
 
   <body>
     <my-app></my-app>
+
+    <noscript>
+      Пожалуйста включите JavaScript чтобы сайт отобразился
+    </noscript>
   </body>
 </html>
